@@ -1,0 +1,9 @@
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\bin\Debug\16_bit_register_model.exe.config
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\bin\Debug\16_bit_register_model.exe
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\bin\Debug\16_bit_register_model.pdb
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\16_bit_register_model.csprojResolveAssemblyReference.cache
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\_16_bit_register_model.Form1.resources
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\_16_bit_register_model.Properties.Resources.resources
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\16_bit_register_model.csproj.GenerateResource.Cache
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\16_bit_register_model.exe
+c:\users\marek\documents\visual studio 2015\Projects\16_bit_register_model\16_bit_register_model\obj\Debug\16_bit_register_model.pdb
