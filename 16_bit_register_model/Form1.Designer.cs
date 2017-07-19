@@ -66,6 +66,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.Compile = new System.Windows.Forms.Button();
+            this.Row_to_all = new System.Windows.Forms.Label();
+            this.Delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -294,6 +296,7 @@
             this.MOV.TabIndex = 24;
             this.MOV.Text = "MOV";
             this.MOV.UseVisualStyleBackColor = true;
+            this.MOV.Click += new System.EventHandler(this.MOV_Click);
             // 
             // ADD
             // 
@@ -303,6 +306,7 @@
             this.ADD.TabIndex = 25;
             this.ADD.Text = "ADD";
             this.ADD.UseVisualStyleBackColor = true;
+            this.ADD.Click += new System.EventHandler(this.ADD_Click);
             // 
             // SUB
             // 
@@ -312,90 +316,109 @@
             this.SUB.TabIndex = 26;
             this.SUB.Text = "SUB";
             this.SUB.UseVisualStyleBackColor = true;
+            this.SUB.Click += new System.EventHandler(this.SUB_Click);
             // 
             // A
             // 
+            this.A.Enabled = false;
             this.A.Location = new System.Drawing.Point(12, 121);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(75, 23);
             this.A.TabIndex = 27;
             this.A.Text = "A";
             this.A.UseVisualStyleBackColor = true;
+            this.A.Click += new System.EventHandler(this.A_Click);
             // 
             // B
             // 
+            this.B.Enabled = false;
             this.B.Location = new System.Drawing.Point(12, 150);
             this.B.Name = "B";
             this.B.Size = new System.Drawing.Size(75, 23);
             this.B.TabIndex = 28;
             this.B.Text = "B";
             this.B.UseVisualStyleBackColor = true;
+            this.B.Click += new System.EventHandler(this.B_Click);
             // 
             // C
             // 
+            this.C.Enabled = false;
             this.C.Location = new System.Drawing.Point(12, 179);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(75, 23);
             this.C.TabIndex = 29;
             this.C.Text = "C";
             this.C.UseVisualStyleBackColor = true;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // D
             // 
+            this.D.Enabled = false;
             this.D.Location = new System.Drawing.Point(12, 208);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(75, 23);
             this.D.TabIndex = 30;
             this.D.Text = "D";
             this.D.UseVisualStyleBackColor = true;
+            this.D.Click += new System.EventHandler(this.D_Click);
             // 
             // All
             // 
+            this.All.Enabled = false;
             this.All.Location = new System.Drawing.Point(12, 263);
             this.All.Name = "All";
             this.All.Size = new System.Drawing.Size(75, 23);
             this.All.TabIndex = 31;
             this.All.Text = "X";
             this.All.UseVisualStyleBackColor = true;
+            this.All.Click += new System.EventHandler(this.All_Click);
             // 
             // H
             // 
+            this.H.Enabled = false;
             this.H.Location = new System.Drawing.Point(12, 292);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(75, 23);
             this.H.TabIndex = 32;
             this.H.Text = "H";
             this.H.UseVisualStyleBackColor = true;
+            this.H.Click += new System.EventHandler(this.H_Click);
             // 
             // L
             // 
+            this.L.Enabled = false;
             this.L.Location = new System.Drawing.Point(12, 321);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(75, 23);
             this.L.TabIndex = 33;
             this.L.Text = "L";
             this.L.UseVisualStyleBackColor = true;
+            this.L.Click += new System.EventHandler(this.L_Click);
             // 
             // Add_code
             // 
+            this.Add_code.Enabled = false;
             this.Add_code.Location = new System.Drawing.Point(12, 425);
             this.Add_code.Name = "Add_code";
             this.Add_code.Size = new System.Drawing.Size(89, 23);
             this.Add_code.TabIndex = 34;
             this.Add_code.Text = "Add_to_code";
             this.Add_code.UseVisualStyleBackColor = true;
+            this.Add_code.Click += new System.EventHandler(this.Add_code_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(490, 265);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(266, 268);
             this.textBox1.TabIndex = 35;
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Enabled = false;
             this.numericUpDown1.Location = new System.Drawing.Point(12, 373);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             100000,
@@ -405,21 +428,43 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 36;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // Compile
             // 
-            this.Compile.Location = new System.Drawing.Point(12, 468);
+            this.Compile.Enabled = false;
+            this.Compile.Location = new System.Drawing.Point(12, 488);
             this.Compile.Name = "Compile";
             this.Compile.Size = new System.Drawing.Size(89, 23);
             this.Compile.TabIndex = 37;
             this.Compile.Text = "Compile code";
             this.Compile.UseVisualStyleBackColor = true;
             // 
+            // Row_to_all
+            // 
+            this.Row_to_all.AutoSize = true;
+            this.Row_to_all.Location = new System.Drawing.Point(275, 273);
+            this.Row_to_all.Name = "Row_to_all";
+            this.Row_to_all.Size = new System.Drawing.Size(0, 13);
+            this.Row_to_all.TabIndex = 38;
+            // 
+            // Delete
+            // 
+            this.Delete.Location = new System.Drawing.Point(12, 459);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(120, 23);
+            this.Delete.TabIndex = 39;
+            this.Delete.Text = "Delete current row";
+            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 543);
+            this.Controls.Add(this.Delete);
+            this.Controls.Add(this.Row_to_all);
             this.Controls.Add(this.Compile);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBox1);
@@ -506,6 +551,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button Compile;
+        private System.Windows.Forms.Label Row_to_all;
+        private System.Windows.Forms.Button Delete;
     }
 }
 
