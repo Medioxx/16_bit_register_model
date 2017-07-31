@@ -15,10 +15,13 @@ namespace _16_bit_register_model
         int numberOfRows=1;
         String allCode="";
         String row="";
+        Register beczka = new Register();
         int secondLoop = 0;
         public Form1()
         {
             InitializeComponent();
+            Register beka = new Register(Older, Younger_register, Binary_format, Decimal_format);
+            beczka = beka;
         }
 
         private void MOV_Click(object sender, EventArgs e)
@@ -33,6 +36,7 @@ namespace _16_bit_register_model
             C.Enabled = true;
             D.Enabled = true;
             Delete.Enabled = true;
+            beczka.test();
         }
 
         private void ADD_Click(object sender, EventArgs e)
@@ -97,7 +101,7 @@ namespace _16_bit_register_model
             {
                 numericUpDown1.Enabled = false;
             }
-
+       
 
         }
 
