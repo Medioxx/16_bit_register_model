@@ -68,6 +68,7 @@
             this.Compile = new System.Windows.Forms.Button();
             this.Row_to_all = new System.Windows.Forms.Label();
             this.Delete = new System.Windows.Forms.Button();
+            this.YOUNGER_B1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,7 +156,7 @@
             // YOUNGER_B
             // 
             this.YOUNGER_B.AutoSize = true;
-            this.YOUNGER_B.Location = new System.Drawing.Point(371, 131);
+            this.YOUNGER_B.Location = new System.Drawing.Point(1177, 348);
             this.YOUNGER_B.Name = "YOUNGER_B";
             this.YOUNGER_B.Size = new System.Drawing.Size(55, 13);
             this.YOUNGER_B.TabIndex = 9;
@@ -408,6 +409,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(490, 265);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -439,6 +442,7 @@
             this.Compile.TabIndex = 37;
             this.Compile.Text = "Compile code";
             this.Compile.UseVisualStyleBackColor = true;
+            this.Compile.Click += new System.EventHandler(this.Compile_Click);
             // 
             // Row_to_all
             // 
@@ -458,11 +462,21 @@
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
+            // YOUNGER_B1
+            // 
+            this.YOUNGER_B1.AutoSize = true;
+            this.YOUNGER_B1.Location = new System.Drawing.Point(371, 131);
+            this.YOUNGER_B1.Name = "YOUNGER_B1";
+            this.YOUNGER_B1.Size = new System.Drawing.Size(55, 13);
+            this.YOUNGER_B1.TabIndex = 40;
+            this.YOUNGER_B1.Text = "00000000";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 543);
+            this.Controls.Add(this.YOUNGER_B1);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Row_to_all);
             this.Controls.Add(this.Compile);
@@ -553,6 +567,7 @@
         private System.Windows.Forms.Button Compile;
         private System.Windows.Forms.Label Row_to_all;
         private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Label YOUNGER_B1;
     }
 }
 
